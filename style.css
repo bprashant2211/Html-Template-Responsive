@@ -1,0 +1,111 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+body{
+  background-color: white;
+}
+.navbar-toggler-icon{
+  background-color: rgba(158, 132, 132, 0.582);
+}
+p{
+  font-size: 20px;
+  font-family: 'Poly', serif;
+  text-align: justify;
+  
+}
+
+a button{
+  background-color: #DB1218;
+
+  color: white;
+  margin: 15px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Poly', serif;
+}
+
+a button:hover{
+  background-color: white;
+  color: black;
+}
+h2{
+  font-size: 70px;
+  color: black;
+  font-family: 'Playfair Display', serif;
+}
+.nav-link{
+  color: white;
+  font-size: 20px;
+  font-family: 'Poly', serif;
+}
+
+ .nav-link:focus, .nav-link:hover{
+  color:white;
+} 
+
+.megamenu>a{
+  color:rgba(0, 0, 0, 0.377);
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.megamenu>a:hover{
+  color:black;
+  font-weight: 500;
+}
+.megamenu>a
+{
+    position: relative;
+}
+
+.megamenu>a:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 0;
+  left: 30;
+  background-color:red;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.megamenu>a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+.side-img img {
+  position: absolute;
+  left: -70px;
+  z-index: -9;
+  top: 300px;
+}
+.caroseltext{
+  margin-top: 200px;
+}
+
+
+@media screen and (max-width:768px) {
+  .side-img img{
+    position: absolute;
+    left: -100px;
+    z-index: -9;
+    top: 200px;
+  }
+  .caroseltext{
+    margin-top: 100px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .megamenu {
+    padding: 50px;
+    
+  }
+}
